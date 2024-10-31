@@ -44,7 +44,7 @@ function App() {
 
         <h1>Digital Clock</h1>
 
-        <div className="time">{formatTimeWithero(formatHour(currentTime.getHours()))} : {formatTimeWithero(currentTime.getMinutes())} : {formatTimeWithero(currentTime.getSeconds())}</div>
+        <div className="time">{formatTimeWithero(formatHour(currentTime.getHours()))} : {formatTimeWithero(currentTime.getMinutes())} : {formatTimeWithero(currentTime.getSeconds())} {currentTime.getHours() >= 12 ? "PM" : "AM"}</div>
 
         <div className="date">{formatDate(currentTime)}</div>
       </div>
